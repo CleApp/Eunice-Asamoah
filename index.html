@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Eunice! 🎉</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-pink-100 to-purple-200 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-bold text-purple-800 font-pacifico">Eunice's Birthday Countdown</h1>
+            <p class="text-lg md:text-xl text-purple-600 mt-4">Celebrating the amazing Asamoah Eunice!</p>
+        </header>
+
+        <main class="flex flex-col items-center">
+            <!-- Countdown Timer -->
+            <div class="bg-white rounded-2xl shadow-xl p-6 mb-12 w-full max-w-3xl">
+                <h2 class="text-2xl md:text-3xl font-bold text-center text-purple-700 mb-6">Counting down to the big day!</h2>
+                <div id="countdown" class="flex justify-center gap-4 md:gap-8">
+                    <div class="text-center">
+                        <div class="text-4xl md:text-6xl font-bold text-pink-500" id="days">00</div>
+                        <div class="text-sm md:text-base text-purple-600">Days</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl md:text-6xl font-bold text-pink-500" id="hours">00</div>
+                        <div class="text-sm md:text-base text-purple-600">Hours</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl md:text-6xl font-bold text-pink-500" id="minutes">00</div>
+                        <div class="text-sm md:text-base text-purple-600">Minutes</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl md:text-6xl font-bold text-pink-500" id="seconds">00</div>
+                        <div class="text-sm md:text-base text-purple-600">Seconds</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Birthday Message (hidden until countdown ends) -->
+            <div id="birthday-message" class="hidden bg-white rounded-2xl shadow-xl p-8 mb-12 w-full max-w-3xl text-center">
+                <h2 class="text-3xl md:text-5xl font-bold text-pink-600 mb-6 animate-bounce">🎉 Happy Birthday Eunice! 🎉</h2>
+                <p class="text-lg md:text-xl text-purple-700 mb-6">Wishing you an amazing day filled with love, joy, and happiness!</p>
+                <div class="flex justify-center">
+                    <i data-feather="heart" class="text-pink-500 w-12 h-12 animate-pulse"></i>
+                </div>
+            </div>
+
+            <!-- Photo Gallery -->
+            <div class="bg-white rounded-2xl shadow-xl p-6 w-full max-w-6xl">
+                <h2 class="text-2xl md:text-3xl font-bold text-center text-purple-700 mb-6">Celebrating Eunice</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="overflow-hidden rounded-xl shadow-md">
+                        <img src="http://static.photos/people/640x360/1" alt="Eunice" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-xl shadow-md">
+                        <img src="http://static.photos/people/640x360/2" alt="Eunice" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-xl shadow-md">
+                        <img src="http://static.photos/people/640x360/3" alt="Eunice" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-xl shadow-md">
+                        <img src="http://static.photos/people/640x360/4" alt="Eunice" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-xl shadow-md">
+                        <img src="http://static.photos/people/640x360/5" alt="Eunice" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="overflow-hidden rounded-xl shadow-md">
+                        <img src="http://static.photos/people/640x360/6" alt="Eunice" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="mt-16 text-center text-purple-600">
+            <p>Made with <i data-feather="heart" class="inline text-pink-500 w-4 h-4"></i> for Eunice's special day</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
